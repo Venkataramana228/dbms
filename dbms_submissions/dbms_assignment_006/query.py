@@ -1,0 +1,5 @@
+#Q1="SELECT fname,lname FROM Actor a INNER JOIN Cast c on a.id==c.pid WHERE c.mid==12148;"
+Q1="SELECT fname,lname FROM Actor  INNER JOIN Cast  on id==pid WHERE mid==12148;"
+Q2="SELECT COUNT(mid) FROM Actor a  INNER JOIN Cast c on a.id=c.pid WHERE fname='Harrison (I)' and lname='Ford';"
+Q3="SELECT DISTINCT(pid) FROM Movie m INNER JOIN Cast c on m.id=c.mid where m.name LIKE 'Young Latin Girls%';"
+Q4="SELECT COUNT(DISTINCT pid) FROM movie m INNER JOIN Cast a on m.id=a.mid where m.year BETWEEN 1990 and 2000;"
