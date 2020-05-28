@@ -349,5 +349,7 @@ def read_data(sql_query):
 	connection.close() 
 	return ans
 	
+	
+	hh
 '''s=Student.avg("age",age__lt=20)
 print(s)'''
